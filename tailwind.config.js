@@ -1,10 +1,11 @@
 module.exports = {
   content: [],
-  theme: {
-    fontFamily: {
-      header:[ 'Hubballi', cursive]
+  theme: { 
+    extend: {
+      fontFamily: {
+        'hubb':"'Hubballi', cursive;",
+      },
     },
-    extend: {},
   },
   plugins: [],
 }
