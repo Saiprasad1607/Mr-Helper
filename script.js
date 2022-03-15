@@ -1,3 +1,5 @@
+//slideshow 
+
 
 
 var slideIndex = 1;
@@ -25,17 +27,26 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
+  slides[slideIndex-1].style.display= "block";
   dots[slideIndex-1].className += " active";
 }
 
+// const hamburger = document.querySelector(".hamburger");
+// const navLinks = document.querySelector(".nav-links");
+// const links = document.querySelectorAll(".nav-links li");
 
-function clearErrors() {
-  errors = document.getElementsByClassName("formerror");
-  for(let item of errors) {
-    item.innerHTML="";
-  }
-}
+// hamburger.addEventListener("click", () => {
+//   navLinks.classList.toggle("open");
+//   links.forEach(link => {
+//     link.classList.toggle("fade");
+//   });
+// });
+// function clearErrors() {
+//   errors = document.getElementsByClassName("formerror");
+//   for(let item of errors) {
+//     item.innerHTML="";
+//   }
+// }
 
 function validate() {
   var returnval = true;
@@ -44,7 +55,7 @@ function validate() {
   var pwd = document.getElementById("password").value;
 
 
-  if(pwd.length>6){
+  if(pwd.length>=6){
     // alert("You have provided a valid Email Id")
     return true
   }

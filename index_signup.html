@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Helper</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c87b9239a5.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="text-blue-600 body-font bg-yellow-400 font-medium">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center   ">
+          <a class="flex title-font font-medium items-center text-blue-900 mb-4 md:mb-0 " href="index.html">
+            
+              <!-- <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg> -->
+            <span class="ml-3 text-2xl  font-black">Mr. Helper</span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center text-lg">
+            <a class="mr-5 hover:text-blue-900 font-bold" href="index.html">Home</a>
+            <a class="mr-5 hover:text-blue-900">Services</a>
+            <a class="mr-5 hover:text-blue-900">Book A Service</a>
+            <a class="mr-5 hover:text-blue-900" href="about.html">About</a>
+            
+            <a class="mr-5 hover:text-blue-900" >
+            <!-- <button  id="dropdownInformationButton" data-dropdown-toggle="dropdownInformation">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
+                  </svg>
+            </button> -->
+            <button id="dropdownButton" data-dropdown-toggle="dropdown" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Dropdown button <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button>
+
+<!-- Dropdown menu -->
+<div id="dropdown" class="hidden z-10 w-44 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700">
+    <ul class="py-1" aria-labelledby="dropdownButton">
+      <li>
+        <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Dashboard</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Settings</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Earnings</a>
+      </li>
+      <li>
+        <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
+      </li>
+    </ul>
+</div>
+            </a>
+            
+          </nav>
+          
+        </div>
+        <!-- <label for="check">
+          <i class="fas fa-bars menu-btn"></i>
+          <i class="fas fa-times close-btn">
+            
+          </i>
+  
+        </label> -->
+      </header>
+      <!-- Header -->
+  
+      <!-- Slideshow container -->
+  <div class="slideshow-container">
+  
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade hover:opacity-5">
+      
+      <img src="carpenter.jpg" style="width:100%">
+      
+    </div>
+  
+    <div class="mySlides fade">
+      
+      <img src="electrician.jpg" style="width:100%">
+      
+    </div>
+  
+    <div class="mySlides fade">
+      
+      <img src="plumber.jpg" style="width:100%">
+      
+    </div>
+  
+    <div class="mySlides fade">
+      
+      <img src="many.jpg" style="width:100%">
+      
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  
+  </div>
+  
+      <!-- Body -->
+      <!-- footer -->
+      <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            
+            <span class="ml-3 text-2xl font-header">Mr. Helper</span>
+          </a>
+          
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </footer>
+      <!-- footer -->
+
+    <script src="script.js"></script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
+        import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+          apiKey: "AIzaSyCoL1cehAA3itCW98UzuWv8mO-Z6B7DiGE",
+          authDomain: "mr-helper-a835a.firebaseapp.com",
+          databaseURL: "https://mr-helper-a835a-default-rtdb.firebaseio.com",
+          projectId: "mr-helper-a835a",
+          storageBucket: "mr-helper-a835a.appspot.com",
+          messagingSenderId: "1009784908020",
+          appId: "1:1009784908020:web:63244b670f6df5d94d16a1"
+        };
+        const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+    const auth = getAuth();
+        auth().onAuthStateChanged((user)=>{
+            if(!user){
+                location.replace("register.html")
+            }
+        })
+    </script>
+</body>
+</html>
+
+

@@ -7,41 +7,49 @@
     <title>Login Page</title>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
    
 </head>
 <body>
     <!-- Header -->
-    <header class="text-blue-600 body-font bg-yellow-500 ">
+    <header class="text-blue-600 body-font bg-yellow-400 font-medium">
       <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center   ">
-        <a class="flex title-font font-medium items-center text-blue-900 mb-4 md:mb-0 ">
+        <a class="flex title-font font-medium items-center text-blue-900 mb-4 md:mb-0 " href="index.html">
           
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
           </svg>
-          <span class="ml-3 text-2xl font-header font-bold">Mr. Helper</span>
+          <span class="ml-3 text-2xl  font-black">Mr. Helper</span>
         </a>
         <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center text-lg">
           <a class="mr-5 hover:text-blue-900 " href="index.html">Home</a>
           <a class="mr-5 hover:text-blue-900">Services</a>
           <a class="mr-5 hover:text-blue-900">Book A Service</a>
-          <a class="mr-5 hover:text-blue-900">About</a>
+          <a class="mr-5 hover:text-blue-900" href="about.html">About</a>
           
           <a class="mr-5 hover:text-blue-900" href="login.html">
             <button class="inline-flex items-center bg-blue-100 border-0 py-1 px-3 focus:outline-none hover:bg-blue-200 rounded text-base mt-4 md:mt-0" >Login
-              
-                <!-- <path d="M5 12h14M12 5l7 7-7 7"></path> -->
-              </svg>
-            </button>
+          
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
           </a>
         </nav>
         
       </div>
+      <label for="check">
+        <i class="fas fa-bars menu-btn"></i>
+        <i class="fas fa-times close-btn">
+          
+        </i>
+
+      </label>
     </header>
   <!-- Header -->
     <!-- Login -->
-    <section class="text-gray-600 body-font">
+    <section class="text-gray-600 body-font text-xl">
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 hover:bg-contain">
-            <img class="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600">
+            <img class="object-cover object-center rounded" alt="hero" src="login.png">
           </div>
           <div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
             <div class="max-w-md w-full space-y-8">
@@ -55,7 +63,7 @@
                   
                 </p>
               </div>
-              <form class="mt-8 space-y-6" action="#" method="POST" onsubmit="validate()">
+              <form class="mt-8 space-y-6" action="#" id="loginForm" method="POST" onsubmit="login(event)">
                 <input type="hidden" name="remember" value="true">
                 <div class="rounded-md shadow-sm -space-y-px">
                   <div>
@@ -80,15 +88,42 @@
                 </div>
           
                 <div>
-                  <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500" >
+                  <input type="submit" id="login" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"  >
                     <span class="absolute left-0 inset-y-0 flex items-center pl-3">
                       <!-- Heroicon name: solid/lock-closed -->
-                      <svg class="h-5 w-5 text-yellow-500 group-hover:text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      
                         <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
                       </svg>
                     </span>
                     Sign in
-                  </button>
+                  </input>
+                </div>
+                <!-- <div class="flex items-center justify-between">
+
+                  <div class="flex items-center">
+                    <h7 class=" text-justify justify-self-end text-xs  text-gray-900">Don't Have an Account?</h7>
+
+                  </div>
+                  <div>
+                    <a href="/register.html" >
+                      <h7 class=" text-justify justify-self-end text-xs  text-gray-900 font-medium text-yellow-600 hover:text-yellow-500">Register Here</h7>
+                    </a>
+                  </div>
+
+                </div> -->
+          
+                <div class="flex items-center justify-between">
+
+                  <div class="flex items-center ">
+                    <h7 class=" text-justify  justify-self-end text-xs  text-gray-900">Don't Have an Account?</h7>
+
+                  </div>
+                  <div>
+                    <a href="register.html" >
+                      <h7 class=" text-justify justify-self-end text-xs  text-gray-900 font-medium text-yellow-600 hover:text-yellow-500">Register Here</h7>
+                    </a>
+                  </div>
+
                 </div>
               </form>
             </div>
@@ -132,6 +167,88 @@
         </div>
       </footer>
       <!-- footer -->
-      <script src="script.js"></script>
+    <!-- firebase  -->
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
+    import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js";
+    import { getAuth,signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+            apiKey: "AIzaSyCoL1cehAA3itCW98UzuWv8mO-Z6B7DiGE",
+            authDomain: "mr-helper-a835a.firebaseapp.com",
+            databaseURL: "https://mr-helper-a835a-default-rtdb.firebaseio.com",
+            projectId: "mr-helper-a835a",
+            storageBucket: "mr-helper-a835a.appspot.com",
+            messagingSenderId: "1009784908020",
+            appId: "1:1009784908020:web:63244b670f6df5d94d16a1"
+          };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+    const auth = getAuth();
+
+  login.addEventListener('click',(e)=>{
+   var email = document.getElementById('email-address').value;
+   var password = document.getElementById('password').value;
+
+      signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in 
+        const user = userCredential.user;
+
+        const dt = new Date();
+         update(ref(database, 'users/' + user.uid),{
+          last_login: dt,
+        })
+
+         alert('User logged in!');
+        // ...
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+
+        alert(errorMessage);
+  });
+
+ });
+
+const user = auth.currentUser;
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    // User is signed in, see docs for a list of available properties
+    // https://firebase.google.com/docs/reference/js/firebase.User
+    const uid = user.uid;
+    //
+    // ...
+  } else {
+    // User is signed out
+    // ...
+    //
+  }
+});
+
+logout.addEventListener('click',(e)=>{
+
+signOut(auth).then(() => {
+  // Sign-out successful.
+  alert('user logged out');
+}).catch((error) => {
+  // An error happened.
+  const errorCode = error.code;
+  const errorMessage = error.message;
+
+     alert(errorMessage);
+});
+
+});
+
+  </script>
+
 </body>
 </html>
+
