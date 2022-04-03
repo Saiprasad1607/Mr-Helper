@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Helper</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hubballi&family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c87b9239a5.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="text-blue-600 body-font bg-yellow-400 font-medium">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center   ">
+          <a class="flex title-font font-medium items-center text-blue-900 mb-4 md:mb-0 " href="index.html">
+            
+              <!-- <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg> -->
+            <span class="ml-3 text-2xl  font-black">Mr. Helper</span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center text-lg align-middle">
+            <a class="mr-5 hover:text-blue-900 " href="index.html">Home</a>
+            <a class="mr-5 hover:text-blue-900">Services</a>
+            <a class="mr-5 hover:text-blue-900">Book A Service</a>
+            <a class="mr-5 hover:text-blue-900" href="about.html">About</a>
+            
+            
+              <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="fill-yellow-500">
+                  <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
+                </svg></button>
+                <div class="space-x-8 drop-shadow-md text-center justify-items-end space-x-10 ">
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-flex items-center " viewBox="0 0 20 20" fill="currentColor">
+                      <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                    </svg>Profile</a>
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-flex items-center " fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>Settings</a>
+                    <a href="#" class="items-start" id="signout_btn"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline-flex items-center " fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                    </svg>Sign Out</a>
+                  </div>
+                </div>
+                
+              </div>
+          </nav>
+          
+        </div>
+            </a>
+            
+        
+      </header>
+      
+  
+      <!-- Body -->
+        <!-- Background image -->
+        <section>
+          <div class="relative overflow-hidden bg-no-repeat bg-cover" style="
+            background-position: 50%;
+            background-image: url('https://wallpapercave.com/wp/wp4465199.jpg');
+            height: 450px;
+            
+            ">
+                
+                    <div class="flex flex-col">
+                        <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+                          <div class="py-2 inline-block min-w-full sm:px-6 lg:px-8">
+                            <div class="overflow-hidden">
+                              <table class="min-w-full">
+                                <thead class="border-b">
+                                  <tr>
+                                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                                      
+                                    </th>
+                                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                                      
+                                    </th>
+                                    <th scope="col" class="text-sm font-medium text-gray-900 px-6 py-4 text-left">
+                                        <h1 class="font-medium leading-tight text-xl mt-0 mb-2 text-slate-300 font-black text-xl">Profile</h1>
+                                    </th>
+                                    <th class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                        
+                                    </th>
+                                  </tr>
+                                </thead>
+                                <tbody id="body">
+                                  <tr class="bg-white border-b" >
+                                    <td class="px-6 py-4 whitespace-nowrap  font-thin text-xs text-gray-900">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
+                                          </svg>
+                                    </td>
+                                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                      Name
+                                    </td>
+                                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap" id="td6">
+                                      
+                                    </td>
+                                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                        
+                                    </td>
+                                  </tr>
+                                  <tr class="bg-white border-b">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-thin text-xs text-gray-900">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+                                          </svg>
+                                    </td>
+                                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                      Email
+                                    </td>
+                                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap" id="td9">
+                                      
+                                    </td>
+                                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                        
+                                    </td>
+                                  </tr>
+                                  <tr class="bg-white border-b">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-thin text-xs text-gray-900">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                          </svg>
+                                    </td>
+                                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                      Service
+                                    </td>
+                                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap" id="td12">
+                                      
+                                    </td>
+                                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                        
+                                    </td>
+                                  </tr>
+                                  <tr class="bg-white border-b">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-thin text-xs text-gray-900">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                          </svg>
+                                    </td>
+                                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                      Phone Number
+                                    </td>
+                                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap" id="td15">
+                                      
+                                    </td>
+                                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                        
+                                    </td>
+                                  </tr>
+                                  <tr class="bg-white border-b">
+                                    <td class="px-6 py-4 whitespace-nowrap text-xs font-thin text-sm text-gray-900">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                          </svg>
+                                    </td>
+                                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                      Address
+                                    </td>
+                                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap" id="td18">
+                                     
+                                    </td>
+                                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                        
+                                    </td>
+                                  </tr>
+                                  <tr class=" border-b">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-thin text-sm text-gray-900"></td>
+                                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                      
+                                    </td>
+                                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                        <div>
+                                          <a href="profile_edit.html">
+                                            <button type="text" class="group relative   justify-center py-2 px-4 border border-transparent text-sm font-thin text-sm rounded-md text-white bg-yellow-600 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500" >
+                                              <span class="absolute left-0 inset-y-0 flex items-center pl-3">
+                                                
+                                              </span>
+                                              Update
+                                            </button>
+                                          </a>
+                                            
+                                          </div>
+                                    </td>
+                                    <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">
+                                        
+                                    </td>
+                                  </tr>
+                                </tbody>
+                               
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                      
+            </div>
+        </section>
+            
+            
+            
+<!-- Background image -->
+      
+      
+
+      <!-- Body -->
+      <!-- footer -->
+    <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            
+            <span class="ml-3 text-2xl font-header">Mr. Helper</span>
+          </a>
+          
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </footer>
+      <!-- footer -->
+
+    <script src="profile.js"></script>
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+        import { getDatabase, set, ref, update ,onValue, get, child} from "https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyBcXJiVeqttPTtnBpx68uciaw4zRcB6l1k",
+  authDomain: "mr-helper-a28bf.firebaseapp.com",
+  projectId: "mr-helper-a28bf",
+  storageBucket: "mr-helper-a28bf.appspot.com",
+  messagingSenderId: "811727457021",
+  appId: "1:811727457021:web:7ea410b16b941dadd98c94"
+        };
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+        const auth = getAuth();
+        const user = auth.currentUser;
+
+        onAuthStateChanged(auth,(user) => {
+        if(!user) {
+          const  uid = user.uid;
+          window.location = 'register.html';
+        }
+        else {
+          // User is signed out
+        // ...
+        }
+      })
+
+      signout_btn.addEventListener('click',(e) => {
+
+        var signout = document.getElementById('signout_btn').value;
+        sessionStorage.removeItem('user');
+        localStorage.removeItem('user');
+        localStorage.removeItem('keepLoggedIn');
+
+        signOut(auth).then(() => {
+        alert("SignOut Successful");
+        window.location = 'index.html'
+      }).catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+
+        alert(errorMessage);
+      })
+
+
+      })
+      
+      var no = 0;
+      var tbody = document.getElementById('body')
+      // function AddItem(email,uname,service,phone,address) {
+        
+
+      // }
+
+      let trow = document.createElement("tr");
+        let td3 = document.getElementById('td');
+        let td6 = document.getElementById('td6');      
+        let td9 = document.getElementById('td9');      
+        let td12 = document.getElementById('td12');      
+        let td15 = document.getElementById('td15'); 
+        let td18 = document.getElementById('td18');      
+        var currentUser = null;
+
+
+        td3.innerHTML= ++no;
+        td6.innerHTML= Name;
+        td9.innerHTML= email;
+        td12.innerHTML= Phone;
+        td15.innerHTML= Service;
+        td18.innerHTML= Address;
+
+        trow.appendChild(td3);
+        trow.appendChild(td6);
+        trow.appendChild(td9);
+        trow.appendChild(td12);
+        trow.appendChild(td15);
+        trow.appendChild(td18);
+
+        tbody.appendChild(trow);
+
+      function getUserName(){
+        // let  keepLoggedIn = localStorage.getItem("keepLoggedIn");
+
+        // if(keepLoggedIn=="yes"){
+        //   currentUser = JSON.parse(localStorage.getItem('user'))
+        // }
+        // else{
+        //   currentUser = JSON.parse(sessionStorage.getItem('user'));
+        //   const user_s = auth.currentUser;
+        //       if (user_s !== null) {
+        //       // User is signed in, see docs for a list of available properties
+        //       // https://firebase.google.com/docs/reference/js/firebase.User
+        //       // ...
+        //       td6.innerHTML= currentUser.uname;
+        //       td9.innerHTML = currentUser.email;
+        //     } else {
+        //       // No user is signed in.
+        //     }
+      
+        // }
+        currentUser = sessionStorage.getItem('uid')
+          // const user = auth.currentUser;
+
+        if (user !== null) {
+          console.log(user);
+          // console.log(currentUser.email);
+        } else {
+          //No user is signed in
+        }
+      }
+
+      window.onload = function() {
+        getUserName();
+        if(currentUser == null){
+
+        }
+        else{
+          td6.innerHTML= currentUser.uname;
+          td9.innerHTML = currentUser.email;
+        }
+      }
+      
+      
+    </script>
+</body>
+</html>
+
+

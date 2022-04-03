@@ -19,10 +19,11 @@ section {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: fit-content;
-  max-height: fit-content;
+  max-width :100%;
+  max-height: 100%;
   position: relative;
   margin: auto;
+  border-radius: 50%;
 }
 
 /* Hide the images by default */
@@ -175,4 +176,205 @@ nav {
     -webkit-clip-path: circle(1000px at 90% -10%);
     pointer-events: all;
   }
+}
+
+/* Dropdown Button */
+.dropbtn {
+  
+  color: rgb(253 224 71);
+  padding: 8px;
+  border-radius: 75%;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: rgb(14 165 233);
+  
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  
+  padding: 15px 15px;
+  text-decoration:solid;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+
+/*select menu*/
+/* CHECKBOX TOGGLE SWITCH */
+              /* @apply rules for documentation, these do not work as inline style */
+              .toggle-checkbox:checked {
+                @apply: right-0 border-green-400;
+                right: 0;
+                border-color: #68D391;
+              }
+              .toggle-checkbox:checked + .toggle-label {
+                @apply: bg-green-400;
+                background-color: #68D391;
+              }
+
+/*tooltip*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px solid black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: rgb(254 240 138);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.rectangle {
+  height: 67px;
+  width: 1000px;
+  background-color: #555;
+}
+
+/*rectangle btn*/
+.rectangle_btn {
+  /* Rectangle 1 */
+
+
+position: absolute;
+width: 120px;
+height: 12px;
+left: 76px;
+top: 188px;
+
+background: #E0BE00;
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+border-radius: 42px;
+}
+
+
+
+.container_s {
+  width: 1400px;
+  height: 650px;
+}
+
+.app-color-blue-1 {
+  color: #346EE1;
+}
+
+.app-color-blue-3 {
+  color: #A0B4D6;
+}
+
+.app-color-black {
+  color: #3E4350;
+}
+
+.app-color-gray-1 {
+  color: #949AA7;
+}
+
+.app-color-red {
+  color: #949AA7;
+}
+
+.app-bg-blue-1 {
+  background: #346EE1;
+}
+
+.app-bg-blue-2{
+  background: #F5F9FC;
+}
+
+.app-button-shadow {
+  box-shadow: 0px 5px 10px 0px rgb(145 167 210 / 25%);
+}
+
+.app-bg-blue-3 {
+  background: #4A7AE5;
+}
+
+.app-bg-blue-4 {
+  background: #518AEA;
+}
+
+.app-bg-white-1 {
+  background: #F4F8F9;
+}
+
+.app-color-yellow-1 {
+  color: #D7AC67;
+}
+
+.app-bg-yellow-2 {
+  background: #FFF9EB;
+}
+
+.app-bg-yellow-3 {
+  background: #FFBE4E;
+}
+
+.app-border-1 {
+  border: 1px solid #F4F6F9;
+}
+
+.app-color-red-1 {
+  color: #E0899C;
+}
+
+.app-bg-red-2 {
+  background: #FEF5F6;
+}
+
+.app-color-green {
+  color: #0CBDA8;
+}
+
+.active {
+  position: relative;
+  box-shadow: 6px -6px 11px 0 rgb(0 0 0 / 8%);
+}
+
+.active::before {
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 55%;
+  background-color: #346EE1;
+  top: 20px;
+  left: 0;
 }
