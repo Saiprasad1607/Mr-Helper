@@ -6,8 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
-   
+   <style>
+     /* Styling modal */
+     .modal:before {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+   </style>
 </head>
 <body>
     <!-- Header -->
@@ -22,7 +31,7 @@
           <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center text-lg align-middle">
             <a class="mr-5 hover:text-blue-900 " href="index.html">Home</a>
             <a class="mr-5 hover:text-blue-900 font-bold" href="services.html">Services</a>
-            <a class="mr-5 hover:text-blue-900" href="bookservice.html">Book A Service</a>
+            <!-- <a class="mr-5 hover:text-blue-900" href="bookservice.html">Book A Service</a> -->
             <a class="mr-5 hover:text-blue-900" href="about.html">About</a>
             
             <a class="mr-5 hover:text-blue-900" href="login.html">
@@ -46,15 +55,19 @@
       <!-- Header -->
 
 <!--service-->
-<section class="text-gray-600 body-font 	">
+<section class="text-gray-600 body-font 	" id="service_page">
     <div class="container px-5 py-24 mx-auto ">
         <h1 class="sm:text-3xl text-2xl font-bold underline underline-offset-1 title-font text-center text-gray-900 mb-20">OUR SERVICES
             
           </h1>
       <div class="flex flex-wrap -m-4 " >
         <div class=" lg:w-1/8 md:w-1/4 p-4 w-full" id="electrician">
-          <a class="block relative h-48 rounded overflow-hidden " href="#">
-            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80" class="max-w-xs hover:scale-110 transition duration-300 ease-in-out">
+          <a class="block relative h-48 rounded overflow-hidden " >
+            <button>
+
+              <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80" class="max-w-xs hover:scale-110 transition duration-300 ease-in-out">
+            </button>
+            
             
           </a>
           <div class="mt-4 ">
@@ -64,8 +77,12 @@
           </div>
         </div>
         <div class=" lg:w-1/4 md:w-1/2 p-4 w-full" id="plumber">
-          <a class="block relative h-48 rounded overflow-hidden" href="#">
-            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://www.ziprecruiter.com/svc/fotomat/public-ziprecruiter/uploads/job_description_template/Plumber.jpg">
+          <a class="block relative h-48 rounded overflow-hidden" >
+            <button>
+
+              <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://www.ziprecruiter.com/svc/fotomat/public-ziprecruiter/uploads/job_description_template/Plumber.jpg">
+            </button>
+            
           </a>
           <div class="mt-4">
             <h3 class="text-neutral-900 font-semibold text-xs tracking-widest title-font mb-1">PLUMBER</h3>
@@ -73,8 +90,10 @@
           </div>
         </div>
         <div class="lg:w-1/4 md:w-1/2 p-4 w-full" id="painting">
-          <a class="block relative h-48 rounded overflow-hidden" href="#">
+          <a class="block relative h-48 rounded overflow-hidden" ><button>
             <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://mattthepainter.com/wp-content/uploads/professional-painters.jpg">
+
+          </button>
           </a>
           <div class="mt-4">
             <h3 class="text-neutral-900 font-semibold text-xs tracking-widest title-font mb-1">PAINTING</h3>
@@ -82,7 +101,7 @@
           </div>
         </div>
         <div class="lg:w-1/4 md:w-1/2 p-4 w-full" id="isp">
-          <a class="block relative h-48 rounded overflow-hidden" href="#">
+          <a class="block relative h-48 rounded overflow-hidden" >
             <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://www.actcorp.in/sites/default/files/blogs/Blog%20Image_1%20B.webp">
           </a>
           <div class="mt-4">
@@ -91,7 +110,7 @@
           </div>
         </div>
         <div class="lg:w-1/4 md:w-1/2 p-4 w-full" id="pest">
-          <a class="block relative h-48 rounded overflow-hidden" href="#">
+          <a class="block relative h-48 rounded overflow-hidden" >
             <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://www.guardpestcontrol.com.au/wp-content/uploads/2019/11/home-pest-control-cost.png">
           </a>
           <div class="mt-4">
@@ -100,7 +119,7 @@
           </div>
         </div>
         <div class="lg:w-1/4 md:w-1/2 p-4 w-full" id="carpentry">
-          <a class="block relative h-48 rounded overflow-hidden" href="#">
+          <a class="block relative h-48 rounded overflow-hidden" >
             <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://www.thebalancesmb.com/thmb/3zcgjdCDA5cVNoCLBrMrgJeqtdw=/3437x2578/smart/filters:no_upscale()/young-stylish-cabinet-maker-with--glasses-and-hairstyle--strong--handsome-craftsman-holding-saw-and-wood-blank-at-workplace-944613244-5af9afc2a18d9e003c17040c.jpg">
           </a>
           <div class="mt-4">
@@ -109,7 +128,7 @@
           </div>
         </div>
         <div class="lg:w-1/4 md:w-1/2 p-4 w-full" id="shifting">
-          <a class="block relative h-48 rounded overflow-hidden" href="#">
+          <a class="block relative h-48 rounded overflow-hidden" >
             <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="http://cananywhere.com/wp-content/uploads/2017/06/office-shifting.jpg">
           </a>
           <div class="mt-4">
@@ -118,7 +137,7 @@
           </div>
         </div>
         <div class="lg:w-1/4 md:w-1/2 p-4 w-full" id="cable">
-          <a class="block relative h-48 rounded overflow-hidden" href="#">
+          <a class="block relative h-48 rounded overflow-hidden" >
             <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbHftRYqQ3PpGNi0j4DUJ5ycYOh9bOf23lRg&usqp=CAU">
           </a>
           <div class="mt-4">
@@ -127,7 +146,7 @@
           </div>
         </div>
         <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
-          <!-- <a class="block relative h-48 rounded overflow-hidden" href="#">
+          <!-- <a class="block relative h-48 rounded overflow-hidden" >
             <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="http://cananywhere.com/wp-content/uploads/2017/06/office-shifting.jpg">
           </a>
           <div class="mt-4">
@@ -136,7 +155,7 @@
           </div> -->
         </div>
         <div class="lg:w-1/4 md:w-1/2 p-4 w-full" id="house_c"> 
-          <a class="block relative h-48 rounded overflow-hidden" href="#">
+          <a class="block relative h-48 rounded overflow-hidden" >
             <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://www.nakodadcs.com/nakoda_admin/image/797445house-cleaning.jpg">
           </a>
           <div class="mt-4">
@@ -145,7 +164,7 @@
           </div>
         </div>
         <div class="lg:w-1/4 md:w-1/2 p-4 w-full" id="home">
-          <a class="block relative h-48 rounded overflow-hidden" href="#">
+          <a class="block relative h-48 rounded overflow-hidden" >
             <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="https://coimbatoreservicecenter.in/image/banner.svg">
           </a>
           <div class="mt-4">
@@ -160,9 +179,169 @@
 
 
 
+  <!--table-->
+  <section class="bg-gray-200 flex justify-center items-center h-screen w-screen 	" id="table">
+        
+    <div class="container_s overflow-hidden rounded-2xl">
+        <h1 class="sm:text-2xl text-xl font-bold underline underline-offset-1 title-font text-center text-gray-900 mb-10">BOOK A SERVICE
+        
+        </h1>
+      <div class="flex flex-row bg-white items-center">
+          <div class="app-bg-yellow-1 px-10 py-5">
+              <span class="text-2xl text-black underline underline-offset-1 font-black" id="title"></span>
+          </div>
+          <div class="flex flex-row pl-5 items-center">
+
+          </div>
+          
+      </div>
+      <div class="flex flex-col app-bg-white-1 px-12 pb-10">
+          
+          <div class="flex flex-row">
+              
+          </div>
+          <div class="flex flex-row bg-white p-10 relative">
+              <div class="absolute app-bg-yellow-3 text-xs font-semibold px-3 py-0.5 rounded-br-md rounded-tl-md text-white" style="top: 76px;"></div>
+              <table class="w-full">
+                  <thead>
+                      <tr>
+                          <th></th>
+                          <!-- <th></th> -->
+                          <th class="text-left text-xs app-color-black pb-5">PROVIDER</th>
+                          <th class="text-left text-xs app-color-black pb-5">CONTACT</th>
+                          <th class="text-left text-xs app-color-black pb-5">ADDRESS</th>
+                          <th class="text-left text-xs app-color-black pb-5"></th>
+                          <th></th>
+                          <th></th>
+                      </tr>
+                  </thead>
+                  <tbody id="tbody1">
+                      
+                     
+                        
+                  </tbody>
+              </table>
+              
+          </div>
+      </div>
+      
+
+    <!-- <button class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button" data-modal-toggle="authentication-modal" id="modal_btn">Book</button> -->
+    
+    <div id="authentication-modal" tabindex="-1" class="modal hidden flex items-center  overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full">
+      <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+      
+      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+      <div class="flex justify-end p-2">
+      <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white" data-modal-toggle="authentication-modal" id="close_btn">
+      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+      </button>
+      </div>
+      <div class="min-h-full flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-md w-full space-y-8">
+          <div>
+            
+            <h3 class="mt-2 text-center text-5xl font-bold text-gray-900">Book a Service</h3>
+            <p class="mt-2 text-center text-sm text-gray-600">
+                <span className="h-px w-10 bg-gray-500"></span>
+                
+                <span className="h-px w-10 bg-gray-500"></span>
+              
+            </p>
+          </div>
+          <form class="mt-6 space-y-5"  id="loginForm" method="POST" >
+            <!-- <div>
+              <label for="Provider" class="leading-7 text-sm text-gray-600 inline-block align-middle ">Provider</label>
+                <input id="Provider" name="provide"   required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 focus:z-10 sm:text-sm"  ><span class="formerror"></span>
+            </div> -->
+            <input type="hidden" name="remember" value="true">
+            <div class="rounded-md shadow-sm -space-y-px">
+              <div>
+                <label for="Phone Number" class="leading-7 text-sm text-gray-600 inline-block align-middle ">Phone Number</label>
+                <input id="Phone Number" name="phone"   required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 focus:z-10 sm:text-sm" placeholder="Phone number" ><span class="formerror"></span>
+              </div>
+                                 
+              <div>
+                <div class="flex flex-row  items-center mr-auto">
+                  <div class="h-9 w-9 app-bg-yellow-2 flex justify-center items-center rounded-xl">
+                      <svg class="w-6 h-6 app-color-yellow-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                      Date
+                  </div>
+                  <div class="flex flex-col pl-5">
+                      <span class="font-semibold text-sm app-color-black">
+                        <input type="date" id="date" >  
+                        </span>
+                      <span class="font-semibold text-sm app-color-yellow-1">
+                      </span>
+                  </div>
+                  
+                  <div class="service_page w-px bg-gray-100 h-10 ml-5">
+                    <p id="demo"></p>
+                      
+                  </div>
+                  <div class="flex flex-row  items-center mr-auto">
+                    <div class="h-9 w-9 app-bg-yellow-1 flex justify-center items-center rounded-xl">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 app-color-yellow-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      Time
+                    </div>
+                    <div class="flex flex-col pl-5">
+                        <span class="font-semibold text-sm app-color-black">
+                            <input type="time" id="time">
+                        </span>
+                        <span class="font-semibold text-sm app-color-yellow-1"></span>
+                    </div>
+                    
+                    <div class="w-px bg-gray-100 h-10 ml-5"></div>
+                    
+                </div>
+                  
+              </div>
+              <div>
+
+                
+              </div>
+              <div>
+                <label for="Address" class="leading-7 text-sm text-gray-600 inline-block align-middle ">Address</label>
+                <textarea id="Address" name="Address" autocomplete="current-password" required class="appearance-none rounded-none relative block w-full px-4 py-5 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-yellow-500 focus:border-yellow-500 focus:z-10 sm:text-sm" placeholder="Address"></textarea>
+            </div><span class="formerror"></span>
+        </div>
+            </div>
+      
+            
+      
+            <div>
+              <button type="button" id="book" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"  >
+                <span class="absolute left-0 inset-y-0 flex items-center pl-3">
+                  <!-- Heroicon name: solid/lock-closed -->
+                  
+                    
+                  
+                </span>Book
+               
+              </button>
+            </div>
+            
+      
+            <div class="flex items-center justify-between">
+
+              
+
+            </div>
+          </form>
+        </div>
+      </div>
+      </div>
+    </div>
+      </div>
+      </div>
+      </div>
+  
+  </section>
 
 
-    <footer class="text-gray-600 body-font">
+    <footer class="text-gray-600 body-font bg-gray-200">
         <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
           <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
             
@@ -196,6 +375,1013 @@
         </div>
       </footer>
       <!-- footer -->
-      <script src="script.js"></script>
+      <!-- <script src="script.js"></script> -->
+      
+      <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
+      import { getDatabase, set, ref, update,onValue , get } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js";
+      import { getAuth,signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
+      
+  
+  
+  
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+  
+      // Your web app's Firebase configuration
+  
+      import {getFirestore , doc, getDoc , collection , addDoc ,setDoc, updateDoc , deleteDoc , deleteField} from  "https://www.gstatic.com/firebasejs/9.4.0/firebase-firestore.js"; 
+      const firebaseConfig = {
+        apiKey: "AIzaSyBcXJiVeqttPTtnBpx68uciaw4zRcB6l1k",
+    authDomain: "mr-helper-a28bf.firebaseapp.com",
+    projectId: "mr-helper-a28bf",
+    storageBucket: "mr-helper-a28bf.appspot.com",
+    messagingSenderId: "811727457021",
+    appId: "1:811727457021:web:7ea410b16b941dadd98c94"
+            };
+  
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const database = getDatabase(app);
+      const auth = getAuth();
+      const db = getFirestore();
+  
+   
+
+      document.getElementById("table").style.display = "none";
+
+      var serNo = 0;
+      var bno = 2;
+      var tbody = document.getElementById('tbody1');
+      var serList = [];
+      
+
+      //table data
+      electrician.addEventListener('click' , (e) => {
+        var data = [];
+        console.log(data);
+        function sample() {
+
+        const starCountRef = ref(database, 'services/' + '/Electrician' );
+        onValue(starCountRef, (snapshot) => {
+         data = snapshot.val();
+         console.log("sample",data)
+      })
+        }
+        
+        sample();
+        console.log(data);
+
+      
+      document.getElementById("table").style.display = "inline-flex";
+      document.getElementById("service_page").style.display = "none";
+      document.getElementById("title").innerHTML = "ELECTRICIANS"
+
+
+
+      function AddItem(uname, phone , address) {
+        let trow = document.createElement("tr");
+        let td1 =  document.createElement('td');
+        let td2 =  document.createElement('td');
+        let td3 =  document.createElement('td');
+        let td4 =  document.createElement('td');
+        let td5 =  document.createElement('td');
+
+        serList.push([uname,phone,address]);
+        td1.innerHTML = ++serNo;
+        td2.innerHTML = uname;
+        td3.innerHTML = phone;
+        td4.innerHTML = address;
+        td5.innerHTML = '<button class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button"   id="modal_btn">Book</button>'
+
+        trow.appendChild(td1);
+        trow.appendChild(td2);
+        trow.appendChild(td3);
+        trow.appendChild(td4);
+        trow.appendChild(td5);
+
+        // td1.innerHTML = 'font-weight: bold'
+
+        
+        // var ControlDiv = document.createElement("div");
+        // ControlDiv.innerHTML = '<button class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button"   id="modal_btn">Book</button>'
+
+        // trow.appendChild(ControlDiv);
+        tbody.appendChild(trow);
+
+        console.log("additems")
+      let modal = document.getElementById('authentication-modal');
+      let btn = document.getElementById('modal_btn');
+      let close_btn = document.getElementById('close_btn');
+
+      var pname = document.getElementById("pname");
+      var ModPhone = document.getElementById("Phone Number").value;
+      var ModProvide = document.getElementById("Provider");
+      var ModAdd = document.getElementById("Address").value;
+      var Date = document.getElementById("date").value;
+      var Time = document.getElementById("time").value;
+      var ModBtn = document.getElementById("book");
+
+
+      btn.onclick = function() {
+        modal.classList.remove('hidden');
+        ModBtn.addEventListener('click' ,(e) =>{
+          var ModPhone = document.getElementById("Phone Number").value;
+      var ModAdd = document.getElementById("Address").value;
+      var Date = document.getElementById("date").value;
+      var Time = document.getElementById("time").value;
+      
+
+          set(ref(database,'services/' + '/Electrician/' + 	'/24*7 Electrical Services/' +  '/Bookings/' +'/'  + serNo), {
+                    BPhone : ModPhone,
+                    BAdd : ModAdd,
+                    Date : Date,
+                    Time : Time
+
+                })
+                    .then(() => {
+                        // Data saved successfully!
+        // window.location = 'index.html'
+
+                        alert('Details Added Successfully');
+
+        
+                    })
+                    .catch((error) => {
+                        // The write failed...
+                        console.log(error);
+                    });
+    document.getElementById("authentication-modal").style.display = "none";
+
+        })
+        
+
+      }
+      close_btn.onclick = function() {
+        modal.classList.add('hidden')
+      }
+
+      window.onclick = function(event) {
+        if(event.target == modal) {
+        modal.classList.remove('hidden')
+
+        }
+      }
+
+      
+      
+      
+        
+
+
+    //   }) 
+
+      
+      } 
+      
+      
+
+      
+
+      
+
+      function AddAllItems(services){
+        serNo=0;
+        tbody.innerHTML="";
+        services.forEach(element => {
+          AddItem(element.uname,element.phone,element.address)
+          console.log("Addallitems")
+        });
+      }
+
+    // })
+      function GetAllData() {
+        const dbref = ref(database , 'services/' + '/Electrician');
+
+        
+        console.log("dbref",dbref)
+        onValue(dbref, (snapshot) => {
+          var services = [];
+          snapshot.forEach(childSnapshot => {
+
+            services.push(childSnapshot.val());
+        })
+        console.log("services",services)
+          AddAllItems(services);
+        });
+
+      var pname = document.getElementById("pname");
+      var ModPhone = document.getElementById("Phone Number").value;
+      var ModProvide = document.getElementById("Provider");
+      var ModAdd = document.getElementById("Address").value;
+      var Date = document.getElementById("date").value;
+      var Time = document.getElementById("time").value;
+      var ModBtn = document.getElementById("book");
+      
+      
+    //   ModBtn.addEventListener('click' ,(e) => {
+    //   var ModPhone = document.getElementById("Phone Number").value;
+    //   var ModAdd = document.getElementById("Address").value;
+    //   var Date = document.getElementById("date").value;
+    //   var Time = document.getElementById("time").value;
+      
+    //     set(ref(database,'services/' + '/Electrician/' + '/Bookings/' +'/'  ), {
+    //                 BPhone : ModPhone,
+    //                 BAdd : ModAdd,
+    //                 Date : Date,
+    //                 Time : Time
+
+    //             })
+    //                 .then(() => {
+    //                     // Data saved successfully!
+    //                     console.log('Details Added Successfully');
+        
+    //                 })
+    //                 .catch((error) => {
+    //                     // The write failed...
+    //                     console.log(error);
+    //                 });
+
+    // document.getElementById("authentication-modal").style.display = "none";
+        
+
+
+    //   }) 
+       
+
+      }
+      // })
+    
+      
+
+        
+      window.onload = GetAllData();
+
+
+      
+    })
+
+
+    plumber.addEventListener('click' , (e) => {
+      var data = [];
+        console.log(data);
+        function sample() {
+
+        const starCountRef = ref(database, 'services/' + '/Plumbing' );
+        onValue(starCountRef, (snapshot) => {
+         data = snapshot.val();
+         console.log("sample",data)
+      })
+        }
+        
+        sample();
+        console.log(data);
+
+      
+      document.getElementById("table").style.display = "inline-flex";
+      document.getElementById("service_page").style.display = "none";
+      document.getElementById("title").innerHTML = "PLUMBING"
+      
+
+
+
+      function AddItem(uname, phone , address) {
+        let trow = document.createElement("tr");
+        let td1 =  document.createElement('td');
+        let td2 =  document.createElement('td');
+        let td3 =  document.createElement('td');
+        let td4 =  document.createElement('td');
+        let td5 =  document.createElement('td');
+
+        td1.innerHTML = ++serNo;
+        td2.innerHTML = uname;
+        td3.innerHTML = phone;
+        td4.innerHTML = address;
+
+        trow.appendChild(td1);
+        trow.appendChild(td2);
+        trow.appendChild(td3);
+        trow.appendChild(td4);
+
+        var ControlDiv = document.createElement("div");
+        ControlDiv.innerHTML = '<button class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button" onclick=FillTboxes(null)  id="modal_btn">Book</button>'
+
+        trow.appendChild(ControlDiv);
+
+
+        tbody.appendChild(trow);
+
+        console.log("additems")
+      }
+
+      function AddAllItems(services){
+        serNo=0;
+        tbody.innerHTML="";
+        services.forEach(element => {
+          AddItem(element.uname,element.phone,element.address)
+          console.log("Addallitems")
+        });
+      }
+
+    // })
+      function GetAllData() {
+        const dbref = ref(database , 'services/' + '/Plumbing');
+
+        
+        console.log("dbref",dbref)
+        onValue(dbref, (snapshot) => {
+          var services = [];
+          snapshot.forEach(childSnapshot => {
+
+            services.push(childSnapshot.val());
+        })
+        console.log("services",services)
+          AddAllItems(services);
+        });
+       
+
+      }
+      // })
+
+        
+      window.onload = GetAllData();
+
+
+      
+    })
+    painting.addEventListener('click' , (e) => {
+      var data = [];
+        console.log(data);
+        function sample() {
+
+        const starCountRef = ref(database, 'services/' + '/Painting' );
+        onValue(starCountRef, (snapshot) => {
+         data = snapshot.val();
+         console.log("sample",data)
+      })
+        }
+        
+        sample();
+        console.log(data);
+
+      
+      document.getElementById("table").style.display = "inline-flex";
+      document.getElementById("service_page").style.display = "none";
+      document.getElementById("title").innerHTML = "PAINTING"
+
+
+
+      function AddItem(uname, phone , address) {
+        let trow = document.createElement("tr");
+        let td1 =  document.createElement('td');
+        let td2 =  document.createElement('td');
+        let td3 =  document.createElement('td');
+        let td4 =  document.createElement('td');
+        let td5 =  document.createElement('td');
+
+        td1.innerHTML = ++serNo;
+        td2.innerHTML = uname;
+        td3.innerHTML = phone;
+        td4.innerHTML = address;
+
+        trow.appendChild(td1);
+        trow.appendChild(td2);
+        trow.appendChild(td3);
+        trow.appendChild(td4);
+        var ControlDiv = document.createElement("div");
+        ControlDiv.innerHTML = '<button class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button" onclick=FillTboxes(null)  id="modal_btn">Book</button>'
+
+        trow.appendChild(ControlDiv);
+
+        tbody.appendChild(trow);
+
+        console.log("additems")
+      }
+
+      function AddAllItems(services){
+        serNo=0;
+        tbody.innerHTML="";
+        services.forEach(element => {
+          AddItem(element.uname,element.phone,element.address)
+          console.log("Addallitems")
+        });
+      }
+
+    // })
+      function GetAllData() {
+        const dbref = ref(database , 'services/' + '/Painting');
+
+        
+        console.log("dbref",dbref)
+        onValue(dbref, (snapshot) => {
+          var services = [];
+          snapshot.forEach(childSnapshot => {
+
+            services.push(childSnapshot.val());
+        })
+        console.log("services",services)
+          AddAllItems(services);
+        });
+       
+
+      }
+      // })
+
+        
+      window.onload = GetAllData();
+
+
+      
+    })
+    isp.addEventListener('click' , (e) => {
+      var data = [];
+        console.log(data);
+        function sample() {
+
+        const starCountRef = ref(database, 'services/' + '/Internet Service' );
+        onValue(starCountRef, (snapshot) => {
+         data = snapshot.val();
+         console.log("sample",data)
+      })
+        }
+        
+        sample();
+        console.log(data);
+
+      
+      document.getElementById("table").style.display = "inline-flex";
+      document.getElementById("service_page").style.display = "none";
+      document.getElementById("title").innerHTML = "INTERNET SERVICE PROVIDER"
+
+
+
+      function AddItem(uname, phone , address) {
+        let trow = document.createElement("tr");
+        let td1 =  document.createElement('td');
+        let td2 =  document.createElement('td');
+        let td3 =  document.createElement('td');
+        let td4 =  document.createElement('td');
+        let td5 =  document.createElement('td');
+
+        td1.innerHTML = ++serNo;
+        td2.innerHTML = uname;
+        td3.innerHTML = phone;
+        td4.innerHTML = address;
+
+        trow.appendChild(td1);
+        trow.appendChild(td2);
+        trow.appendChild(td3);
+        trow.appendChild(td4);
+
+        tbody.appendChild(trow);
+
+        console.log("additems")
+      }
+
+      function AddAllItems(services){
+        serNo=0;
+        tbody.innerHTML="";
+        services.forEach(element => {
+          AddItem(element.uname,element.phone,element.address)
+          console.log("Addallitems")
+        });
+      }
+
+    // })
+      function GetAllData() {
+        const dbref = ref(database , 'services/' + '/Internet Service');
+
+        
+        console.log("dbref",dbref)
+        onValue(dbref, (snapshot) => {
+          var services = [];
+          snapshot.forEach(childSnapshot => {
+
+            services.push(childSnapshot.val());
+        })
+        console.log("services",services)
+          AddAllItems(services);
+        });
+       
+
+      }
+      // })
+
+        
+      window.onload = GetAllData();
+
+
+      
+    })
+    pest.addEventListener('click' , (e) => {
+      var data = [];
+        console.log(data);
+        function sample() {
+
+        const starCountRef = ref(database, 'services/' + '/Pest Control' );
+        onValue(starCountRef, (snapshot) => {
+         data = snapshot.val();
+         console.log("sample",data)
+      })
+        }
+        
+        sample();
+        console.log(data);
+
+      
+      document.getElementById("table").style.display = "inline-flex";
+      document.getElementById("service_page").style.display = "none";
+      document.getElementById("title").innerHTML = "PEST CONTROL"
+
+
+
+      function AddItem(uname, phone , address) {
+        let trow = document.createElement("tr");
+        let td1 =  document.createElement('td');
+        let td2 =  document.createElement('td');
+        let td3 =  document.createElement('td');
+        let td4 =  document.createElement('td');
+        let td5 =  document.createElement('td');
+
+        td1.innerHTML = ++serNo;
+        td2.innerHTML = uname;
+        td3.innerHTML = phone;
+        td4.innerHTML = address;
+
+        trow.appendChild(td1);
+        trow.appendChild(td2);
+        trow.appendChild(td3);
+        trow.appendChild(td4);
+
+        tbody.appendChild(trow);
+
+        console.log("additems")
+      }
+
+      function AddAllItems(services){
+        serNo=0;
+        tbody.innerHTML="";
+        services.forEach(element => {
+          AddItem(element.uname,element.phone,element.address)
+          console.log("Addallitems")
+        });
+      }
+
+    // })
+      function GetAllData() {
+        const dbref = ref(database , 'services/' + '/Pest Control');
+
+        
+        console.log("dbref",dbref)
+        onValue(dbref, (snapshot) => {
+          var services = [];
+          snapshot.forEach(childSnapshot => {
+
+            services.push(childSnapshot.val());
+        })
+        console.log("services",services)
+          AddAllItems(services);
+        });
+       
+
+      }
+      // })
+
+        
+      window.onload = GetAllData();
+
+
+      
+    })
+    carpentry.addEventListener('click' , (e) => {
+      var data = [];
+        console.log(data);
+        function sample() {
+
+        const starCountRef = ref(database, 'services/' + '/Carpentry' );
+        onValue(starCountRef, (snapshot) => {
+         data = snapshot.val();
+         console.log("sample",data)
+      })
+        }
+        
+        sample();
+        console.log(data);
+
+      
+      document.getElementById("table").style.display = "inline-flex";
+      document.getElementById("service_page").style.display = "none";
+      document.getElementById("title").innerHTML = "CARPENTRY"
+
+
+
+      function AddItem(uname, phone , address) {
+        let trow = document.createElement("tr");
+        let td1 =  document.createElement('td');
+        let td2 =  document.createElement('td');
+        let td3 =  document.createElement('td');
+        let td4 =  document.createElement('td');
+        let td5 =  document.createElement('td');
+
+        td1.innerHTML = ++serNo;
+        td2.innerHTML = uname;
+        td3.innerHTML = phone;
+        td4.innerHTML = address;
+
+        trow.appendChild(td1);
+        trow.appendChild(td2);
+        trow.appendChild(td3);
+        trow.appendChild(td4);
+
+        tbody.appendChild(trow);
+
+        console.log("additems")
+      }
+
+      function AddAllItems(services){
+        serNo=0;
+        tbody.innerHTML="";
+        services.forEach(element => {
+          AddItem(element.uname,element.phone,element.address)
+          console.log("Addallitems")
+        });
+      }
+
+    // })
+      function GetAllData() {
+        const dbref = ref(database , 'services/' + '/Carpentry');
+
+        
+        console.log("dbref",dbref)
+        onValue(dbref, (snapshot) => {
+          var services = [];
+          snapshot.forEach(childSnapshot => {
+
+            services.push(childSnapshot.val());
+        })
+        console.log("services",services)
+          AddAllItems(services);
+        });
+       
+
+      }
+      // })
+
+        
+      window.onload = GetAllData();
+
+
+      
+    })
+    shifting.addEventListener('click' , (e) => {
+      var data = [];
+        console.log(data);
+        function sample() {
+
+        const starCountRef = ref(database, 'services/' + '/Home shifting' );
+        onValue(starCountRef, (snapshot) => {
+         data = snapshot.val();
+         console.log("sample",data)
+      })
+        }
+        
+        sample();
+        console.log(data);
+
+      
+      document.getElementById("table").style.display = "inline-flex";
+      document.getElementById("service_page").style.display = "none";
+      document.getElementById("title").innerHTML = "SHIFTING AND CARGO"
+
+
+
+      function AddItem(uname, phone , address) {
+        let trow = document.createElement("tr");
+        let td1 =  document.createElement('td');
+        let td2 =  document.createElement('td');
+        let td3 =  document.createElement('td');
+        let td4 =  document.createElement('td');
+        let td5 =  document.createElement('td');
+
+        td1.innerHTML = ++serNo;
+        td2.innerHTML = uname;
+        td3.innerHTML = phone;
+        td4.innerHTML = address;
+
+        trow.appendChild(td1);
+        trow.appendChild(td2);
+        trow.appendChild(td3);
+        trow.appendChild(td4);
+
+        tbody.appendChild(trow);
+
+        console.log("additems")
+      }
+
+      function AddAllItems(services){
+        serNo=0;
+        tbody.innerHTML="";
+        services.forEach(element => {
+          AddItem(element.uname,element.phone,element.address)
+          console.log("Addallitems")
+        });
+      }
+
+    // })
+      function GetAllData() {
+        const dbref = ref(database , 'services/' + '/Home shifting');
+
+        
+        console.log("dbref",dbref)
+        onValue(dbref, (snapshot) => {
+          var services = [];
+          snapshot.forEach(childSnapshot => {
+
+            services.push(childSnapshot.val());
+        })
+        console.log("services",services)
+          AddAllItems(services);
+        });
+       
+
+      }
+      // })
+
+        
+      window.onload = GetAllData();
+
+
+      
+    })
+    cable.addEventListener('click' , (e) => {
+      var data = [];
+        console.log(data);
+        function sample() {
+
+        const starCountRef = ref(database, 'services/' + '/Cable Operator' );
+        onValue(starCountRef, (snapshot) => {
+         data = snapshot.val();
+         console.log("sample",data)
+      })
+        }
+        
+        sample();
+        console.log(data);
+
+      
+      document.getElementById("table").style.display = "inline-flex";
+      document.getElementById("service_page").style.display = "none";
+      document.getElementById("title").innerHTML = "CABLE OPERATOR"
+
+
+
+      function AddItem(uname, phone , address) {
+        let trow = document.createElement("tr");
+        let td1 =  document.createElement('td');
+        let td2 =  document.createElement('td');
+        let td3 =  document.createElement('td');
+        let td4 =  document.createElement('td');
+        let td5 =  document.createElement('td');
+
+        td1.innerHTML = ++serNo;
+        td2.innerHTML = uname;
+        td3.innerHTML = phone;
+        td4.innerHTML = address;
+
+        trow.appendChild(td1);
+        trow.appendChild(td2);
+        trow.appendChild(td3);
+        trow.appendChild(td4);
+
+        tbody.appendChild(trow);
+
+        console.log("additems")
+      }
+
+      function AddAllItems(services){
+        serNo=0;
+        tbody.innerHTML="";
+        services.forEach(element => {
+          AddItem(element.uname,element.phone,element.address)
+          console.log("Addallitems")
+        });
+      }
+
+    // })
+      function GetAllData() {
+        const dbref = ref(database , 'services/' + '/Cable Operator');
+
+        
+        console.log("dbref",dbref)
+        onValue(dbref, (snapshot) => {
+          var services = [];
+          snapshot.forEach(childSnapshot => {
+
+            services.push(childSnapshot.val());
+        })
+        console.log("services",services)
+          AddAllItems(services);
+        });
+       
+
+      }
+      // })
+
+        
+      window.onload = GetAllData();
+
+
+      
+    })
+    house_c.addEventListener('click' , (e) => {
+      var data = [];
+        console.log(data);
+        function sample() {
+
+        const starCountRef = ref(database, 'services/' + '/House Cleaning' );
+        onValue(starCountRef, (snapshot) => {
+         data = snapshot.val();
+         console.log("sample",data)
+      })
+        }
+        
+        sample();
+        console.log(data);
+
+      
+      document.getElementById("table").style.display = "inline-flex";
+      document.getElementById("service_page").style.display = "none";
+      document.getElementById("title").innerHTML = "HOUSE CLEANING"
+
+
+
+      function AddItem(uname, phone , address) {
+        let trow = document.createElement("tr");
+        let td1 =  document.createElement('td');
+        let td2 =  document.createElement('td');
+        let td3 =  document.createElement('td');
+        let td4 =  document.createElement('td');
+        let td5 =  document.createElement('td');
+
+        td1.innerHTML = ++serNo;
+        td2.innerHTML = uname;
+        td3.innerHTML = phone;
+        td4.innerHTML = address;
+
+        trow.appendChild(td1);
+        trow.appendChild(td2);
+        trow.appendChild(td3);
+        trow.appendChild(td4);
+
+        tbody.appendChild(trow);
+
+        console.log("additems")
+      }
+
+      function AddAllItems(services){
+        serNo=0;
+        tbody.innerHTML="";
+        services.forEach(element => {
+          AddItem(element.uname,element.phone,element.address)
+          console.log("Addallitems")
+        });
+      }
+
+    // })
+      function GetAllData() {
+        const dbref = ref(database , 'services/' + '/House Cleaning');
+
+        
+        console.log("dbref",dbref)
+        onValue(dbref, (snapshot) => {
+          var services = [];
+          snapshot.forEach(childSnapshot => {
+
+            services.push(childSnapshot.val());
+        })
+        console.log("services",services)
+          AddAllItems(services);
+        });
+       
+
+      }
+      // })
+
+        
+      window.onload = GetAllData();
+
+
+      
+    })
+    home.addEventListener('click' , (e) => {
+      var data = [];
+        console.log(data);
+        function sample() {
+
+        const starCountRef = ref(database, 'services/' + '/Home Appliance Repairs' );
+        onValue(starCountRef, (snapshot) => {
+         data = snapshot.val();
+         console.log("sample",data)
+      })
+        }
+        
+        sample();
+        console.log(data);
+
+      
+      document.getElementById("table").style.display = "inline-flex";
+      document.getElementById("service_page").style.display = "none";
+      document.getElementById("title").innerHTML = "HOME APPLIANCE REPAIRS"
+
+
+
+      function AddItem(uname, phone , address) {
+        let trow = document.createElement("tr");
+        let td1 =  document.createElement('td');
+        let td2 =  document.createElement('td');
+        let td3 =  document.createElement('td');
+        let td4 =  document.createElement('td');
+        let td5 =  document.createElement('td');
+
+        td1.innerHTML = ++serNo;
+        td2.innerHTML = uname;
+        td3.innerHTML = phone;
+        td4.innerHTML = address;
+
+        trow.appendChild(td1);
+        trow.appendChild(td2);
+        trow.appendChild(td3);
+        trow.appendChild(td4);
+
+        tbody.appendChild(trow);
+
+        console.log("additems")
+      }
+
+      function AddAllItems(services){
+        serNo=0;
+        tbody.innerHTML="";
+        services.forEach(element => {
+          AddItem(element.uname,element.phone,element.address)
+          console.log("Addallitems")
+        });
+      }
+
+    // })
+      function GetAllData() {
+        const dbref = ref(database , 'services/' + '/Home Appliance Repairs');
+
+        
+        console.log("dbref",dbref)
+        onValue(dbref, (snapshot) => {
+          var services = [];
+          snapshot.forEach(childSnapshot => {
+
+            services.push(childSnapshot.val());
+        })
+        console.log("services",services)
+          AddAllItems(services);
+        });
+       
+
+      }
+      // })
+
+        
+      window.onload = GetAllData();
+
+
+      
+    })
+      
+   
+   
+  
+    
+
+  
+    </script>
+    <script>
+      // let modal = document.getElementById('authentication-modal');
+      // let btn = document.getElementById('modal_btn');
+      // let close_btn = document.getElementById('close_btn');
+
+
+      // btn.onclick = function() {
+      //   modal.classList.remove('hidden')
+      // }
+      // close_btn.onclick = function() {
+      //   modal.classList.add('hidden')
+      // }
+
+      // window.onclick = function(event) {
+      //   if(event.target == modal) {
+      //   modal.classList.remove('hidden')
+
+      //   }
+      // }
+
+    </script>
+        <!-- <script src="/sign.js"></script> -->
 </body>
 </html>
